@@ -1,0 +1,19 @@
+[package]
+name = "simplekv"
+version = "0.1.0"
+authors = ["Marshall Miller <marshalldavidmiller@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+byteorder = "1.2"
+crc = "1.7"
+serde = "1"
+serde_derive = "1"
+
+[lib]
+name = "libsimplekv"
+path = "src/lib.rs"
+
+[[bin]]
+name = "skv_mem"
+path = "src/skv_mem.rs"
